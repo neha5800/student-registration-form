@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student registration</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- header part of the form -->
+    <header>
+    <h2 class="">Student registration Form</h2>
+</header>
+<!-- section in whicj form and the table placed -->
+<section>
+  <article>
+    <div class="container">
+      <!-- form for student data -->
+        
+            <div class="form " >
+                <label  for="name" >Name :</label>
+                <input type="text"  name="name" class="formData" id="name" placeholder="Enter name" required >
+
+            </div>
+            <div class="form ">
+                <label for="num">Class :</label>
+                <input type="number" name="num" class="formData" id="num" placeholder="Enter class"  required/>
+
+            </div>
+            <div class="form ">
+                <label for="roll">Roll No :</label>
+                <input type="number" name="roll " class="formData" id="roll" placeholder="Enter roll no." required/>
+
+            </div>
+            <div class="form">
+                <label for="email">Email :</label>
+                <input type="email" name="email" class="formData" id="email" placeholder="Enter email" required/>
+
+            </div>
+            <div class="form ">
+                <label for="contact">Contact  :</label>
+                <input type="text" name="contact" class="formData" id="contact" placeholder="Enter contact"  required/>
+
+            </div>
+            
+        <div>
+<input type="submit" class="btn" onclick="AddData()" value="submit" id="add"/>
+<button class="btn"   id="Update" >Update</button>
+</div>
+
+        </div>
+
+        
+</div>
+</article>
+<!-- article contains table in which added data is stored -->
+<article>
+<div>
+  <table >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Roll no.</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="studentData">
+
+    </tbody>
+  </table>
+</div>
+</article>
+</section>
+
+<script src="index.js"></script>
+  </body>
+</html>
